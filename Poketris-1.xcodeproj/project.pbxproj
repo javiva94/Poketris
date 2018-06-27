@@ -12,6 +12,10 @@
 		59778F6B1DBA40EF006B7F79 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59778F691DBA40EF006B7F79 /* Main.storyboard */; };
 		59778F6D1DBA40EF006B7F79 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59778F6C1DBA40EF006B7F79 /* Assets.xcassets */; };
 		59778F701DBA40EF006B7F79 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59778F6E1DBA40EF006B7F79 /* LaunchScreen.storyboard */; };
+		59778F7A1DBA414F006B7F79 /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59778F771DBA414F006B7F79 /* Board.swift */; };
+		59778F7B1DBA414F006B7F79 /* Block.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59778F781DBA414F006B7F79 /* Block.swift */; };
+		59778F7C1DBA414F006B7F79 /* Texture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59778F791DBA414F006B7F79 /* Texture.swift */; };
+		59778F7F1DBA41A2006B7F79 /* BoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59778F7E1DBA41A2006B7F79 /* BoardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		59778F6C1DBA40EF006B7F79 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		59778F6F1DBA40EF006B7F79 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		59778F711DBA40EF006B7F79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		59778F771DBA414F006B7F79 /* Board.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
+		59778F781DBA414F006B7F79 /* Block.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Block.swift; sourceTree = "<group>"; };
+		59778F791DBA414F006B7F79 /* Texture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Texture.swift; sourceTree = "<group>"; };
+		59778F7E1DBA41A2006B7F79 /* BoardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BoardView.swift; path = ../BoardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,11 +65,23 @@
 				59778F651DBA40EF006B7F79 /* AppDelegate.swift */,
 				59778F671DBA40EF006B7F79 /* ViewController.swift */,
 				59778F691DBA40EF006B7F79 /* Main.storyboard */,
+				59778F7E1DBA41A2006B7F79 /* BoardView.swift */,
+				59778F7D1DBA415A006B7F79 /* Model */,
 				59778F6C1DBA40EF006B7F79 /* Assets.xcassets */,
 				59778F6E1DBA40EF006B7F79 /* LaunchScreen.storyboard */,
 				59778F711DBA40EF006B7F79 /* Info.plist */,
 			);
 			path = "Poketris-1";
+			sourceTree = "<group>";
+		};
+		59778F7D1DBA415A006B7F79 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				59778F771DBA414F006B7F79 /* Board.swift */,
+				59778F781DBA414F006B7F79 /* Block.swift */,
+				59778F791DBA414F006B7F79 /* Texture.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +158,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				59778F681DBA40EF006B7F79 /* ViewController.swift in Sources */,
+				59778F7C1DBA414F006B7F79 /* Texture.swift in Sources */,
+				59778F7B1DBA414F006B7F79 /* Block.swift in Sources */,
+				59778F7F1DBA41A2006B7F79 /* BoardView.swift in Sources */,
 				59778F661DBA40EF006B7F79 /* AppDelegate.swift in Sources */,
+				59778F7A1DBA414F006B7F79 /* Board.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
